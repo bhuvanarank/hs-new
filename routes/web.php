@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('auth.login');
-});
+// Route::get('/', function () {
+//     return view('website.landing');
+// });
+Route::get('/', 'WebController@landing');
 
 Auth::routes();
 Auth::routes(['login' => 'auth.login']);
@@ -25,6 +26,8 @@ Route::group(['middleware' => 'web'], function () {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/index', 'MainController@index');
 Route::get('/index', 'MainController@index');
+Route::get('/membership', 'MainController@membership');
+Route::get('/view-form/{id}', 'MainController@viewform');
 
 Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('/reset', function() {

@@ -67,7 +67,7 @@ width: 100% !important;
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Hotelsstory</title>
+    <title>VNS</title>
     <!-- base:css -->
     <link rel="stylesheet" href="{{ asset('assets/css/materialdesignicons.min.css')}}">
     <link rel="stylesheet" href="{{ asset('assets/css/vendor.bundle.base.css')}}">
@@ -98,13 +98,11 @@ width: 100% !important;
         <div class="container-fluid">
           <div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <a class="navbar-brand brand-logo" href="{{url('index')}}"><img src="{{ asset('assets/img/hs-logo.png')}}" alt="logo22"/></a>
-                <a class="navbar-brand brand-logo-mini" href="{{url('index')}}"><img src="{{ asset('assets/img/hs-logo.png')}}" alt="logo11"/></a>
+                <a class="navbar-brand brand-logo" href="{{url('index')}}"><img src="{{ asset('assets/img/vns-logo.png')}}" alt="logo22"/></a>
+                <a class="navbar-brand brand-logo-mini" href="{{url('index')}}"><img src="{{ asset('assets/img/vns-logo.png')}}" alt="logo11"/></a>
             </div>
             <ul class="navbar-nav navbar-nav-right">
-                <li class="nav-item dropdown d-sm-flex d-none">
-                  <button type="button" class="btn btn-inverse-primary btn-sm"><a href="{{url('#')}}">Settings  </a></button>
-                </li>
+                
                 <li class="nav-item nav-profile dropdown">
                   <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
                     <span class="nav-profile-name"></span>
@@ -112,14 +110,6 @@ width: 100% !important;
                     <img src="{{ asset('assets/img/avatar.png')}}" alt="profile"/>
                   </a>
                   <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                      <a class="dropdown-item" href="{{url('editprofile')}}">
-                        <i class="mdi mdi-account-outline menu-icon text-primary"></i>
-                        Edit Profile
-                      </a>
-                      <a class="dropdown-item" href="{{url('changepassword')}}">
-                        <i class="mdi mdi-lock-outline menu-icon text-primary"></i>
-                        Change Password
-                      </a>
                       <a class="dropdown-item" href="{{url('logout')}}">
                         <i class="mdi mdi-logout text-primary"></i>
                         Logout
@@ -142,9 +132,9 @@ width: 100% !important;
                     <span class="menu-title">{{ 'Dashboard' }} </span></a>
               </li>
               <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="{{url('membership')}}" class="nav-link">
                     <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-                    <span class="menu-title">{{ 'Widgets' }} </span></a>
+                    <span class="menu-title">{{ 'Membership' }} </span></a>
               </li>
               <li class="nav-item">
                   <a href="#" class="nav-link">
@@ -365,7 +355,7 @@ width: 100% !important;
         <footer class="footer">
           <div class="footer-wrap text-center">
               <div class="w-100 clearfix">
-                <span class="d-block text-center text-sm-left d-sm-inline-block">Copyright © 2022 <a href="https://hotelsstory.com/" target="_blank">Hotelsstory</a>. All rights reserved.</span>                
+                <span class="d-block text-center text-sm-left d-sm-inline-block">2022 © All rights reserved by <a href="https://iniyas.co.uk/" target="_blank">Iniyas Services</span>                
               </div>
           </div>
         </footer>

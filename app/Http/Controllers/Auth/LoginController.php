@@ -69,7 +69,7 @@ class LoginController extends Controller
 
                     return view('panels.crm.index');
                     
-                    // return redirect()->route('admin.home');
+                    // return redirect()->route('membership');
 
                 }
 
